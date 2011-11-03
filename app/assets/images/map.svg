@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="770px" height="560px" >
+  <style>
+    rect, circle, ellipse {
+      fill:#ffffff;
+      fill-opacity:1;
+      stroke:#000000;
+      stroke-width:0.89999998;
+      stroke-miterlimit:4;
+      stroke-opacity:1;
+      stroke-dasharray:none;
+      stroke-dashoffset:0";
+    }
+    a:hover rect {
+      fill:#cfc;
+    }
+    line {
+      stroke:#000000;
+      stroke-width:0.89999998;
+      stroke-miterlimit:4;
+      stroke-opacity:1;
+      stroke-dasharray:none;
+      stroke-dashoffset:0";
+    }
+    text {
+      font-family:serif;
+      font-style:italic;
+      font-size:14;
+    }
+  </style>
+  <line x1="50" y1="10" x2="50" y2="80" />
+  <line x1="60" y1="180" x2="60" y2="500" />
+  <line x1="60" y1="500" x2="160" y2="500"/>
+  <line x1="90" y1="180" x2="310" y2="90"/>
+  <line x1="90" y1="180" x2="310" y2="250" />
+  <line x1="310" y1="90" x2="560" y2="90" />
+  <line x1="310" y1="250" x2="600" y2="250"/>
+  <text x="430" y="245" >display img</text>
+  <line x1="310" y1="290" x2="600" y2="290"/>
+  <text x="430" y="285" >trainer img</text>
+  <line x1="450" y1="500" x2="700" y2="500"/>
+  <line x1="420" y1="500" x2="540" y2="310"/>
+  <line x1="310" y1="290" x2="400" y2="500"/>
+  <a target="_top" xlink:href="/goals"><g id="Goal" transform="translate(5,5)"><rect height="40" ry="10" width="100" /><text font-size="32" x="10" y="32">Goal</text></g></a>
+  <a target="_top" xlink:href="/labels"><g id="Label" transform="translate(5,70)"><rect height="40" ry="10" width="120" /><text font-size="32" x="10" y="32">Label</text></g></a>
+  <a target="_top" xlink:href="/levels"><g id="Level" transform="translate(140,5)"><rect height="40" ry="10" width="120" /><text font-size="32" x="10" y="32">Level</text></g></a>
+  <a target="_top" xlink:href="/machines"><g id="Machine" transform="translate(5,150)"><rect height="60" ry="10" width="160" /><text font-size="32" x="10" y="32">Machine</text><text x="20" y="50">Wpl 1/2</text></g></a>
+  <a target="_top" xlink:href="/software_numbers"><g id="Software" transform="translate(5,250)"><rect height="60" ry="10" width="200" /><text font-size="32" x="10" y="32">Software#</text><text x="20" y="50">Number</text></g></a>
+  <a target="_top" xlink:href="/consoles"><g id="Console" transform="translate(5,350)"><rect height="80" ry="10" width="160" /><text font-size="32" x="10" y="32">Console</text><text x="20" y="50">Part Number</text><text x="20" y="70">Model Name</text></g></a>
+  <a target="_top" xlink:href="/models"><g id="Model" transform="translate(5,470)"><rect height="80" ry="10" width="120" /><text font-size="32" x="10" y="32">Model</text><text x="20" y="50">Number</text><text x="20" y="70">Name</text></g></a>
+  <a target="_top" xlink:href="/brands"><g id="Brand" transform="translate(140,470)"><rect height="60" ry="10" width="120" /><text font-size="32" x="10" y="32">Brand</text><text x="20" y="50">Name</text></g></a>
+  <a target="_top" xlink:href="/limits"><g id="Limit" transform="translate(300,5)"><rect height="180" ry="10" width="120" /><text font-size="32" x="10" y="32">Limit</text><text x="20" y="50">Max / Min</text><text x="20" y="70">Speed</text><text x="20" y="90">Incline</text><text x="20" y="110">Resistance</text><text x="20" y="130">Ramp</text><text x="20" y="150">Stride</text><text x="20" y="170">Hertz</text></g></a>
+  <a target="_top" xlink:href="/displays"><g id="Display" transform="translate(250,210)"><rect height="180" ry="10" width="174" /><text font-size="32" x="10" y="32">Display</text><text x="20" y="50">Name / Key</text><text x="20" y="70">Width x Height</text><text x="20" y="90">color?</text><text x="20" y="110">bits per pixel</text><text x="20" y="130">sound type</text><text x="20" y="150">string lenght</text><text x="20" y="170">scrolling display?</text></g></a>
+  <a target="_top" xlink:href="/machine_types"><g id="MachineType" transform="translate(500,5)"><rect height="180" ry="10" width="260" /><text font-size="32" x="10" y="32">Machine Type</text><text x="20" y="50">Behavior</text><text x="20" y="70">Name / Code / Key</text><text x="20" y="90">path</text><text x="20" y="110">class name</text><text x="20" y="130">rate of change (incline)</text><text x="20" y="150">min / max rpm</text><text x="20" y="170">revolutions per mile</text></g></a>
+  <a target="_top" xlink:href="/image_types"><g id="ImageType" transform="translate(540,210)"><rect height="140" ry="10" width="220" /><text font-size="32" x="10" y="32">Image Type</text><text x="20" y="50">Width x Height</text><text x="20" y="70">Format</text><text x="20" y="90">bits per pixel</text><text x="20" y="110">margins</text><text x="20" y="130">colors / style</text></g></a>
+  <a target="_top" xlink:href="/displays/views"><g id="DisplayView" transform="translate(300,450)"><rect height="100" ry="10" width="260" /><text font-size="32" x="10" y="32">Display View</text><text x="20" y="50">Translation / Orientation</text><text x="20" y="70">Rotation</text><text x="20" y="90">( Preview / Chart / Map )</text></g></a>
+  <a target="_top" xlink:href="/graph_styles"><g id="GraphStyle" transform="translate(520,370)"><rect height="60" ry="10" width="240" /><text font-size="32" x="10" y="32">Graph Style</text><text x="20" y="50">Colors / bar graph?</text></g></a>
+  <a target="_top" xlink:href="/views"><g id="View" transform="translate(650,450)"><rect height="100" ry="10" width="100" /><text font-size="32" x="10" y="32">View</text><text x="20" y="50">Title</text><text x="20" y="70">has xy?</text><text x="20" y="90">has fg?</text></g></a>
+</svg>

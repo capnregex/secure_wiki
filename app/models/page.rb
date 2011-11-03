@@ -4,15 +4,17 @@ class Page
   include Mongoid::Versioning
   include Mongoid::Timestamps
   field :name, :type => String
-  field :title, :type => String
   field :content, :type => String, :default => ''
+  field :html, :type => String, :default => ''
   key :name
   validate :name, presence: true, length: { max: 80, min: 2 }
-  def html
-#    RDiscount.new(content, :autolink).to_html
-    RedCloth.new(content).to_html
+  before_save :encode_html
+
+  def encode_html
+    self.html = RDiscount.new(content, :autolink, :smart).to_html
+#    RedCloth.new(content).to_html
   end
   def to_s
-    title || name
+    (name || '').to_s.titleize
   end
 end

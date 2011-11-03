@@ -5,15 +5,11 @@
       %ul
         - @page.errors.full_messages.each do |msg|
           %li= msg
-
+  .actions
+    = f.submit 'Save'
   .field
     = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :title
-    = f.text_field :title
+    = f.text_field :name, class: :name
   .field
     = f.label :content
     = f.text_area :content
-  .actions
-    = f.submit 'Save'

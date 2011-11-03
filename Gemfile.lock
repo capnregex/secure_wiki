@@ -1,7 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    RedCloth (4.2.8)
     actionmailer (3.1.1)
       actionpack (= 3.1.1)
       mail (~> 2.3.0)
@@ -167,7 +166,6 @@ GEM
     rdiscount (1.6.8)
     rdoc (3.11)
       json (~> 1.4)
-    redcarpet (1.17.2)
     rspec (2.7.0)
       rspec-core (~> 2.7.0)
       rspec-expectations (~> 2.7.0)
@@ -219,7 +217,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  RedCloth
   bson_ext (>= 1.3.1)
   capybara (>= 1.1.1)
   coffee-rails (~> 3.1.1)
@@ -244,7 +241,6 @@ DEPENDENCIES
   rails-footnotes (>= 3.7)
   rb-inotify
   rdiscount
-  redcarpet
   rspec-rails (>= 2.7.0)
   sass-rails (~> 3.1.4)
   therubyracer (>= 0.9.8)

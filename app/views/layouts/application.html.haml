@@ -11,6 +11,7 @@
   %body{:class => params[:controller]}
     #container.container
       %header
+        = link_to image_tag("/logo.png"), root_path, :class => 'logo'
         %nav
           = render 'shared/navigation'
         - flash.each do |name, msg|
@@ -18,3 +19,4 @@
       #main{:role => "main"}
         = yield
       %footer
+        = render 'shared/footer'

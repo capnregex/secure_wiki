@@ -1,12 +1,19 @@
 %ul.user_menu
   - if user_signed_in?
     %li= link_to(current_user.name, user_path(current_user))
+    %li= link_to('Profile', edit_user_registration_path)
     %li= link_to('Users', users_path)
     %li= link_to('Logout', destroy_user_session_path, :method=>'delete')
-    %li= link_to('Edit account', edit_user_registration_path)
   - else
     %li= link_to('Login', new_user_session_path)
     %li= link_to('Sign up', new_user_registration_path)
+%ul.page_menu
+  %li= link_to 'Pages', pages_path
+  - if @page and @page.persisted?
+    %li= link_to 'Show', @page
+    %li= link_to 'Edit', edit_page_path(@page)
+    %li= link_to 'Destroy', @page, :confirm => 'Are you sure?', :method => :delete
+  %li= link_to 'New', new_page_path
 %ul.hmenu
   %li= link_to 'Home', root_path
-  %li= link_to 'Pages', pages_path
+%h1.title Securewiki

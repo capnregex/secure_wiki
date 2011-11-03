@@ -1,0 +1,7 @@
+%nav
+  %ul
+    %li 
+      %a{href:'https://github.com/capnregex/secure_wiki'} Secure Wiki
+    - if @page
+      %li page version #{@page.version}
+      %li last updated at #{@page.updated_at}

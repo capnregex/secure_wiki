@@ -56,10 +56,15 @@ protected
     if id == 'home'
       @page = Page.create name: id
     else
-      redirect_to action: :new, page: { name: id }
+      redirect_to new_path(@page)
     end
   end
   def new_page
-    @page = Page.new(params[:page])
+    page = params[:page] || {}
+    id = params[:id]
+    if id
+      page[:name] ||= id
+    end
+    @page = Page.new(page)
   end
 end

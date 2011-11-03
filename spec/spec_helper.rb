@@ -31,6 +31,9 @@ RSpec.configure do |config|
   # rspec-rails.
   config.infer_base_class_for_anonymous_controllers = false  
 
+  # to make the Spec run as authorized
+  config.extend ControllerMacros, :type => :controller
+
   # Clean up the database
   require 'database_cleaner'
   config.before(:suite) do
