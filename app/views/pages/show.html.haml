@@ -1,0 +1,6 @@
+%nav
+  %ul.page_menu
+    %li= link_to 'Edit Page', edit_page_path(@page)
+  .name= link_to @page.name, @page
+%h1= @page
+=raw @page.html

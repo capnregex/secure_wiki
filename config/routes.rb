@@ -1,11 +1,18 @@
 SecureWiki::Application.routes.draw do
-  #get \"users\/show\"
-
-  root :to => "home#index"
+  resources :pages, :only => [:index, :new, :create]
+  # root :to => "home#index"
 
   devise_for :users
   resources :users, :only => [:index, :show]
 
+  root :to => "pages#show", id: 'home'
+
+  match ':id/new' => "pages#new", via: :get
+  match ':id/edit' => "pages#edit", as: :edit_page, via: :get
+  match ':id' => "pages#show", as: :page, via: :get
+  match ':id' => "pages#update", via: :put
+  match ':id' => "pages#create", via: :post
+  match ':id' => "pages#destroy", via: :delete
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
